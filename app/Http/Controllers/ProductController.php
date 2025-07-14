@@ -79,7 +79,7 @@ $data =$request->validate([
         }
         $save = $product->update($data);
         if($save){
-            return redirect()->route('products.index')->with('success', 'Product created successfully!');
+            return redirect()->route('products.index')->with('success', 'Product created successfully!!');
         }else{
             return redirect()->back()->with('error', 'Failed to create product.');
         }
